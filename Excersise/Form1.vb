@@ -1,4 +1,7 @@
-﻿Public Class frmMain
+﻿' Joshua Pickenpaugh
+' Pounds Burned Calculator, September 4th, 2016
+
+Public Class frmMain
     Private Sub Button2_Click(sender As Object, e As EventArgs) Handles Button2.Click
 
         'Closes the application:
@@ -22,6 +25,7 @@
         Dim dblTrainerTotal As Double
         Dim dblBicycleTotal As Double
         Dim dblCaloriesBurnedTotal As Double
+        Dim dblPoundsBurnedTotal As Double
 
         'Assigns hours on each machine into variables from text boxes:
         Double.TryParse(txtStepper.Text, dblStepper)
@@ -36,7 +40,11 @@
         'Calculates total calories burned by adding above machine totals:
         dblCaloriesBurnedTotal = dblStepperTotal + dblTrainerTotal + dblBicycleTotal
 
-        'Calculates
+        'Calculates pounds burned:
+        dblPoundsBurnedTotal = dblCaloriesBurnedTotal / CALORIES_NEEDED_TO_BURN_FOR_ONE_POUND
+
+        'Outputs pounds burned:
+        lblPoundsBurned.Text = dblPoundsBurnedTotal.ToString("N1")
 
     End Sub
 End Class

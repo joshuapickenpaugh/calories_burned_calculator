@@ -40,9 +40,9 @@ Partial Class frmMain
         Me.Stepper.AutoSize = True
         Me.Stepper.Location = New System.Drawing.Point(12, 9)
         Me.Stepper.Name = "Stepper"
-        Me.Stepper.Size = New System.Drawing.Size(44, 13)
+        Me.Stepper.Size = New System.Drawing.Size(82, 13)
         Me.Stepper.TabIndex = 0
-        Me.Stepper.Text = "&Stepper"
+        Me.Stepper.Text = "&Stepper (hours):"
         '
         'txtStepper
         '
@@ -56,9 +56,9 @@ Partial Class frmMain
         Me.Trainer.AutoSize = True
         Me.Trainer.Location = New System.Drawing.Point(118, 9)
         Me.Trainer.Name = "Trainer"
-        Me.Trainer.Size = New System.Drawing.Size(40, 13)
+        Me.Trainer.Size = New System.Drawing.Size(78, 13)
         Me.Trainer.TabIndex = 2
-        Me.Trainer.Text = "&Trainer"
+        Me.Trainer.Text = "&Trainer (hours):"
         '
         'txtTrainer
         '
@@ -72,9 +72,9 @@ Partial Class frmMain
         Me.Label3.AutoSize = True
         Me.Label3.Location = New System.Drawing.Point(224, 8)
         Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(41, 13)
+        Me.Label3.Size = New System.Drawing.Size(79, 13)
         Me.Label3.TabIndex = 4
-        Me.Label3.Text = "&Bicycle"
+        Me.Label3.Text = "&Bicycle (hours):"
         '
         'txtBicycle
         '
@@ -147,6 +147,7 @@ Partial Class frmMain
         Me.Controls.Add(Me.txtStepper)
         Me.Controls.Add(Me.Stepper)
         Me.Name = "frmMain"
+        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Calories Burned Calculator"
         Me.ResumeLayout(False)
         Me.PerformLayout()
